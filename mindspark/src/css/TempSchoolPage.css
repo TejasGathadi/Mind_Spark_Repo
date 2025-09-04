@@ -1,0 +1,103 @@
+.parent-schools-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.parent-schools-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.school-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.school-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.school-card:hover {
+    transform: translateY(-4px);
+}
+
+.school-card h4 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.school-card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.school-card button {
+    background-color: #ff963f;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.school-card button:hover {
+    background-color: #e57b1f;
+}
+
+.back-btn {
+    display: block;
+    margin: 40px auto 0;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 🔽 Responsive layout for tablets and mobile */
+@media (max-width: 768px) {
+    .school-card {
+        width: 90%;
+    }
+
+    .school-card h4 {
+        font-size: 18px;
+    }
+
+    .school-card p {
+        font-size: 14px;
+    }
+
+    .school-card button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

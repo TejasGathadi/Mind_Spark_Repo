@@ -1,0 +1,54 @@
+.hover-3d {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: transparent;
+    /* Ensure transparent background for the image */
+}
+
+.hover-3d:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+    /* Prevent any unwanted shadow on the image */
+}
+
+/* Ensure images don't have any white box or background */
+.card img {
+    background: none !important;
+    padding: 0;
+    border: none;
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Style the card with a white background */
+.card {
+    background: white !important;
+    /* Keep the card visible with a white background */
+    border-radius: 10px;
+    /* Smooth rounded corners */
+    border: 1px solid #ddd;
+    /* Light gray border for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a raised effect */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Enhance the card shadow effect on hover */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50px;
+}
+
+.about-us-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}

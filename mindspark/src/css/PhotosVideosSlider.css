@@ -1,0 +1,68 @@
+/* Swiper Container */
+.gallery-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Each Swiper Slide wrapper (add horizontal spacing) */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* Add spacing around the media */
+    box-sizing: border-box;
+}
+
+/* Common style for images and videos */
+.gallery-item {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect (for larger devices) */
+@media (hover: hover) {
+    .gallery-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .gallery-item {
+        max-width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .gallery-item {
+        aspect-ratio: 3 / 2;
+    }
+
+    .swiper-slide {
+        padding: 8px;
+        /* slightly less padding on small screens */
+    }
+}

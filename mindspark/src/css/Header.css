@@ -1,0 +1,86 @@
+/* Navbar Background */
+.custom-navbar {
+    background-color: #ffffff !important;
+    /* Orange */
+}
+
+/* Navbar Links & Hover Effect */
+.custom-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-hover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: black;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.custom-hover:hover {
+    color: black;
+}
+
+.custom-hover:hover::after {
+    width: 100%;
+    /* Ensures the underline matches text width */
+    left: 0;
+}
+
+
+.logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logout-button:hover {
+    color: #0d6efd;
+    /* Change this to the desired hover color */
+}
+
+/* Logo Styling */
+.logo-img {
+    height: auto;
+    max-height: 80px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Ensure the navbar brand is aligned properly */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-height: 60px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        max-height: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}

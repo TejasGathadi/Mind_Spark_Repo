@@ -1,0 +1,199 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add-school-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.add-school-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-school-form {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.add-school-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-school-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn,
+.reset-btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-btn,
+    .reset-btn {
+        width: 100%;/* Reset some default browser styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            .add-school-container {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                background-color: #f8f8f8;
+            }
+        
+            .add-school-container h2 {
+                margin-bottom: 20px;
+                color: #333;
+            }
+        
+            .add-school-form {
+                background: white;
+                padding: 30px 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+            }
+        
+            .add-school-form label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: #555;
+            }
+        
+            .add-school-form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 15px;
+            }
+        
+            .form-buttons {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .submit-btn,
+            .reset-btn {
+                padding: 10px 20px;
+                border: none;
+                font-size: 15px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        
+            .submit-btn {
+                background-color: #28a745;
+                color: white;
+            }
+        
+            .submit-btn:hover {
+                background-color: #218838;
+            }
+        
+            .reset-btn {
+                background-color: #dc3545;
+                color: white;
+            }
+        
+            .reset-btn:hover {
+                background-color: #c82333;
+            }
+        
+            /* Responsive tweaks */
+            @media (max-width: 480px) {
+                .form-buttons {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+        
+                .submit-btn,
+                .reset-btn {
+                    width: 100%;
+                }
+            }
+    }
+}
+
+.back-btn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+.footer {
+    background: #074799;
+    /* Match the navbar background color */
+    padding: 20px 0;
+    color: white;
+    /* Ensure text color is white */
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    /* Increase font size for headings */
+}
+
+.contact-info,
+.address-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-group {
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    /* Ensure link color is white */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    /* Increase font size for contact links */
+}
+
+.contact-link img {
+    margin-right: 10px;
+    width: 24px;
+    /* Adjust the size of the icons */
+    height: 24px;
+    /* Adjust the size of the icons */
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+    width: 150px;
+    /* Adjust the size of the logo */
+    height: 150px;
+    /* Adjust the size of the logo */
+}
+
+.address-info p {
+    font-size: 1.2rem;
+    /* Increase font size for address */
+}
+
+.copyright {
+    margin: 0;
+    font-size: 1rem;
+    /* Increase font size for copyright */
+}
